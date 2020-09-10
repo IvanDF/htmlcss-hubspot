@@ -68,6 +68,10 @@ input[type="button"]:hover {
   line-height: 60px;
   display: inline-block;
 }
+.navbar-info-lang li i {
+  color: gray;
+  font-size: 14px
+}
 .navbar-info-lang li a{
   line-height: 60px;
   display: inline-block;
@@ -80,8 +84,14 @@ input[type="button"]:hover {
   line-height: 60px;
   display: inline-block;
 }
+.navbar-info-sign li i {
+  vertical-align: middle;
+  font-size: 15px;
+  color: #11A3BD;
+  padding: 0 10px
+}
 .navbar-info-sign li input{
-  padding: 8px;
+  padding: 8px 15px;
 }
 .navbar-info-sign li .button-log{
   border: solid  #FF7959 1px;
@@ -122,7 +132,6 @@ input[type="button"]:hover {
 }
 
 /* main */
-
 /* main header */
 .main-header {
   background: #FFF3EE;
@@ -146,20 +155,19 @@ input[type="button"]:hover {
 .main-header-content input{
 }
 .main-header-content em{
-  display: inline-block;
+  font-size: 13px;
+  display:   block;
   padding: 30px 0 0 0;
 }
-
 .space {
   border-top: 2px black solid;
   border-bottom: 2px black solid;
   height: 80px;
   background: #AFEAE4;
 }
-
 /* sectio title */
 .section-title {
-  padding: 70px 200px;
+  padding: 70px 150px;
   text-align: center;
 }
 .section-title img {
@@ -173,7 +181,7 @@ input[type="button"]:hover {
 .h-card {
   background: #fff;
   border-radius: 5px;
-  box-shadow: 3px 3px;
+  box-shadow: 5px 5px 5px #888888;
   padding: 40px
 }
 .h-card-content::after {
@@ -189,7 +197,7 @@ input[type="button"]:hover {
 }
 .h-content-l img {
   display: block;
-  /* height: 80px; */
+  height: 100px;
 }
 .h-content-l input {
   margin-top: 20px;
@@ -223,7 +231,6 @@ input[type="button"]:hover {
 .h-content-r i {
   padding-right: 10px;
 }
-
 /* vertical card */
 .v-cards {
   margin-top: 70px
@@ -236,7 +243,7 @@ input[type="button"]:hover {
 .v-cards .card {
   text-align: center;
   padding: 30px 40px;
-  box-shadow: 3px 3px;
+  box-shadow: 5px 5px 5px #888888;
   float: left;
   width: 30%;
   background: #fff;
@@ -261,13 +268,14 @@ input[type="button"]:hover {
   padding: 25px 0;
 }
 .v-cards .card ul li{
+  line-height: 20px;
   list-style: none;
   text-align: left;
 }
 .v-cards .card ul li i{
+  font-size: 14px;
   padding-right: 15px;
 }
-
 /* main award */
 .main-award {
   margin: 50px 0;
@@ -311,6 +319,7 @@ input[type="button"]:hover {
   font-size: 25px
 }
 .main-award-col span {
+  padding-left: 3px;
   font-size: 20px;
   font-weight: 400;
 }
@@ -319,7 +328,8 @@ input[type="button"]:hover {
 }
 /* main advertising */
 .main-adv .container:first-child {
-  padding: 0 100px;
+  padding: 0 120px;
+  margin-bottom: 80px;
 }
 .main-adv-customers::after {
   content: '';
@@ -381,7 +391,7 @@ footer {
   clear: both;
 }
 .footer-menu-col {
-  padding: 30px 0;
+  padding: 20px 0;
   float: left;
   width: calc(100% / 4);
 }
@@ -412,7 +422,7 @@ footer {
 /* footer languages */
 .footer-languages {
   text-align:center;
-  margin-bottom: 10px;
+  margin: 40px 0 15px 0  ;
 }
 .footer-languages ul li {
   display: inline-block;
@@ -423,7 +433,7 @@ footer {
   padding: 0 5px;
   margin-bottom: 10px;
 }
-
+/* footer copiright */
 .footer-copiright {
   padding: 30px 0;
   border-top: solid lightgray 1px;
@@ -440,6 +450,8 @@ footer {
   height: 25px;
 }
 .footer-copiright-info p {
+  line-height: 15px;
+  font-size: 13px;
   color: lightgray;
 }
 .footer-copiright-legal {
@@ -450,5 +462,6 @@ footer {
   padding-left: 15px
 }
 .footer-copiright-legal ul li a {
+  font-size: 13px;
   color: lightgray;
 }
