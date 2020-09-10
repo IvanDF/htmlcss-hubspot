@@ -12,6 +12,13 @@ a {
   text-decoration: none;
   color: #000;
 }
+i {
+  color: #FF7959;
+}
+hr {
+  border: 1px solid black;
+}
+
 input[type="button"] {
   background-color: #FF7959;
   border: none;
@@ -173,7 +180,7 @@ input[type="button"]:hover {
 }
 .h-content-l img {
   display: block;
-  height: 100px;
+  /* height: 80px; */
 }
 .h-content-l input {
   margin-top: 20px;
@@ -196,7 +203,6 @@ input[type="button"]:hover {
   display: inline-block;
   padding: 0 190px;
   margin: 0 0 0 60px;
-  border: 1px solid black;
 }
 .h-content-r ul {
   padding-top: 10px;
@@ -219,6 +225,8 @@ input[type="button"]:hover {
   clear: both;
 }
 .v-cards .card {
+  text-align: center;
+  padding: 30px 40px;
   box-shadow: 3px 3px;
   float: left;
   width: 30%;
@@ -229,6 +237,26 @@ input[type="button"]:hover {
 }
 .v-cards .card:last-child {
   margin-left: 5%
+}
+.v-cards .card img{
+  height: 100px;
+}
+.v-cards .card h3{
+  padding-bottom: 20px;
+  text-transform: capitalize;
+}
+.v-cards .card p{
+  padding-bottom: 50px
+}
+.v-cards .card h4{
+  padding: 25px 0;
+}
+.v-cards .card ul li{
+  list-style: none;
+  text-align: left;
+}
+.v-cards .card ul li i{
+  padding-right: 15px;
 }
 
 .main-award {
