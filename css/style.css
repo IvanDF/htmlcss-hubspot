@@ -346,6 +346,7 @@ input[type="button"]:hover {
 /* main grow */
 .adv-grow {
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 .adv-grow::after {
   content: '';
@@ -359,17 +360,46 @@ input[type="button"]:hover {
 .adv-grow-txt p {
   padding: 30px 0;
 }
+.adv-grow-txt p:last-child {
+  font-size: 12px
+}
 .adv-grow-img {
   float: right;
 }
 .adv-grow-img img {
-  height: 250px;
+  height: 300px;
 }
 
 /* footer */
 footer {
-  background: lightgray;
+  color: #fff;
+  background: #33465B;
 }
+.footer-menu::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.footer-menu-col {
+  padding: 30px 0;
+  float: left;
+  width: calc(100% / 4);
+}
+.footer-menu-item {
+  list-style:none;
+}
+.footer-menu-item a{
+  color: lightgray;
+  font-size: 15px;
+}
+.footer-menu-item h5{
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 15px;
+  list-style:none;
+}
+
+
 .footer-languages {
   border-bottom: solid green 2px
 }
