@@ -288,10 +288,34 @@ input[type="button"]:hover {
   display: table;
   clear: both;
 }
+.main-award-row:first-child{
+  border-bottom: 1px solid #fff
+}
 .main-award-col {
+  text-align: center;
   float: left;
   width: calc(100% / 4);
-  border: 1px solid right;
+  padding: 10px;
+}
+.main-award-col:nth-child(1) {
+  border-right: 1px solid #fff;
+}
+.main-award-col:nth-child(2) {
+  border-right: 1px solid #fff;
+}
+.main-award-col:nth-child(3) {
+  border-right: 1px solid #fff;
+}
+.main-award-col h4{
+  line-height: 40px;
+  font-size: 25px
+}
+.main-award-col span{
+  font-size: 20px;
+  font-weight: 400;
+}
+.main-award-col p{
+  font-size: 10px;
 }
 
 .main-adv {
