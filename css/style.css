@@ -81,7 +81,7 @@ input[type="button"]:hover {
   display: inline-block;
 }
 .navbar-info-sign li input{
-  padding: 8px 8px;
+  padding: 8px;
 }
 .navbar-info-sign li .button-log{
   border: solid  #FF7959 1px;
@@ -390,13 +390,24 @@ footer {
 }
 .footer-menu-item a{
   color: lightgray;
+  line-height: 30px;
   font-size: 15px;
 }
 .footer-menu-item h5{
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   color: #fff;
   font-size: 15px;
   list-style:none;
+}
+.footer-menu-item input{
+  margin: 5px 0;
+  color: #000;
+  background: lightgray;
+  padding: 10px;
+}
+.footer-menu-item i{
+  padding-right: 20px;
+  color: lightgray
 }
 
 
