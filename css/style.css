@@ -1,5 +1,65 @@
+/* general settings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  background: green;
+  font-family: 'Jost', sans-serif
+}
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+header{
+  border-bottom: solid black 2px;
+  margin-bottom: 80px;
+}
+.navbar-info{
+  background: gray;
+  border-bottom: solid black 1px;
+  height: 60px
+}
+.navbar-menu{
+  background: lightgray;
+  height: 60px
+}
+
+.header-box-bg {
+  background: url('../img/header/jumbotron.png');
+  height: 300px;
+}
+
+/* main */
+main{
+  border-top: 2px solid black;
+}
+
+.main-section {
+  height: 500px;
+  background: gray;
+}
+.main-award {
+  height: 500px;
+  background: linear-gradient(blue , black);
+}
+.main-adv {
+  height: 500px;
+  background: gray;
+}
+
+/* footer */
+footer {
+  background: lightgray;
+}
+.footer-languages {
+  border-bottom: solid green 2px
+}
+.footer-copiright {
+  background: blue;
+  height: 30px;
 }
