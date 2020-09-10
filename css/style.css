@@ -8,11 +8,31 @@ body {
   background: lightgreen;
   font-family: 'Jost', sans-serif
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
+input[type="button"] {
+  background-color: #FF7959;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+input[type="button"]:hover {
+  background-color: #FFBCAC;
+}
+#animation{
+  transition: all ease-out 1s
+}
+
 .container {
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
 }
+
 
 /* header */
 header {
@@ -20,8 +40,10 @@ header {
   margin-bottom: 80px;
 }
 
+/* navbar info */
 .navbar-info {
   background: #F5F8FA;
+  height: 60px;
 }
 .navbar-info-container::after {
   content: '';
@@ -32,13 +54,32 @@ header {
   float: left;
 }
 .navbar-info-lang li {
+  line-height: 60px;
+  display: inline-block;
+}
+.navbar-info-lang li a{
+  line-height: 60px;
   display: inline-block;
 }
 .navbar-info-sign {
   float: right;
 }
 .navbar-info-sign li {
+  margin-left: 10px;
+  line-height: 60px;
   display: inline-block;
+}
+.navbar-info-sign li input{
+  padding: 8px 8px;
+}
+.navbar-info-sign li .button-log{
+  border: solid  #FF7959 1px;
+  background:#F5F8FA;
+  color:  #FF7959;
+  padding: 8px 8px;
+}
+.navbar-info-sign li .button-log:hover{
+  background-color: #FFBCAC;
 }
 
 .navbar-menu{
