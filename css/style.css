@@ -306,21 +306,44 @@ input[type="button"]:hover {
 .main-award-col:nth-child(3) {
   border-right: 1px solid #fff;
 }
-.main-award-col h4{
+.main-award-col h4 {
   line-height: 40px;
   font-size: 25px
 }
-.main-award-col span{
+.main-award-col span {
   font-size: 20px;
   font-weight: 400;
 }
-.main-award-col p{
+.main-award-col p {
   font-size: 10px;
 }
 
-.main-adv {
-  height: 500px;
-  background: gray;
+
+/* main advertising */
+.main-adv > .container {
+  padding: 0 100px;
+}
+.main-adv-customers::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.main-adv-customers-info {
+  float:left;
+  width: 200px;
+}
+.main-adv-customers-info h3 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.main-adv-customers-logos {
+  float:right;
+}
+.main-adv-customers-logos img {
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* footer */
