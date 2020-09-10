@@ -4,8 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background: green;
+body {
+  background: lightgreen;
   font-family: 'Jost', sans-serif
 }
 .container {
@@ -15,15 +15,32 @@ body{
 }
 
 /* header */
-header{
+header {
   border-bottom: solid black 2px;
   margin-bottom: 80px;
 }
-.navbar-info{
-  background: gray;
-  border-bottom: solid black 1px;
-  height: 60px
+
+.navbar-info {
+  background: #F5F8FA;
 }
+.navbar-info-container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.navbar-info-lang {
+  float: left;
+}
+.navbar-info-lang li {
+  display: inline-block;
+}
+.navbar-info-sign {
+  float: right;
+}
+.navbar-info-sign li {
+  display: inline-block;
+}
+
 .navbar-menu{
   background: lightgray;
   height: 60px
@@ -60,6 +77,5 @@ footer {
   border-bottom: solid green 2px
 }
 .footer-copiright {
-  background: blue;
-  height: 30px;
+     height: 30px;
 }
