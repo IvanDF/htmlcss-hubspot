@@ -317,10 +317,8 @@ input[type="button"]:hover {
 .main-award-col p {
   font-size: 10px;
 }
-
-
 /* main advertising */
-.main-adv > .container {
+.main-adv .container:first-child {
   padding: 0 100px;
 }
 .main-adv-customers::after {
@@ -337,13 +335,35 @@ input[type="button"]:hover {
   padding-bottom: 20px;
 }
 .main-adv-customers-logos {
-  float:right;
+  float: right;
 }
 .main-adv-customers-logos img {
   width: 120px;
   padding: 10px;
   text-align: center;
   vertical-align: middle;
+}
+/* main grow */
+.adv-grow {
+  margin-top: 50px;
+}
+.adv-grow::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.adv-grow-txt {
+  float: left;
+  width: 450px;
+}
+.adv-grow-txt p {
+  padding: 30px 0;
+}
+.adv-grow-img {
+  float: right;
+}
+.adv-grow-img img {
+  height: 250px;
 }
 
 /* footer */
