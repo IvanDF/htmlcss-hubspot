@@ -108,13 +108,18 @@ input[type="button"]:hover {
 }
 
 /* main */
-main{
-  border-top: 2px solid black;
-}
 
 .main-header {
   background: url('../img/header/jumbotron.png');
-  height: 300px;
+}
+.main-header-content {
+  width: 520px
+
+}
+.main-header-content h1{
+  line-height: 50px;
+  font-size: 46px;
+  padding-bottom: 30px;
 }
 
 .space {
