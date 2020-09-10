@@ -18,6 +18,15 @@ i {
 hr {
   border: 1px solid black;
 }
+h2 {
+  font-size: 30px
+}
+h3 {
+  font-size: 20px
+}
+h4 {
+  font-size: 15px
+}
 
 input[type="button"] {
   background-color: #FF7959;
@@ -259,9 +268,32 @@ input[type="button"]:hover {
   padding-right: 15px;
 }
 
+/* main award */
 .main-award {
-  height: 500px;
+  margin: 50px 0;
+  padding: 20px 0;
+  background: linear-gradient(45deg,#00a4bd,#00bda5);
+  color: #fff;
 }
+.main-award-txt {
+  text-align: center;
+  padding: 20px 0;
+}
+.main-award-txt p {
+  padding: 20px 0;
+}
+/* main award table */
+.main-award-row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.main-award-col {
+  float: left;
+  width: calc(100% / 4);
+  border: 1px solid right;
+}
+
 .main-adv {
   height: 500px;
   background: gray;
