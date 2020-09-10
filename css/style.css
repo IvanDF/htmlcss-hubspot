@@ -209,7 +209,27 @@ input[type="button"]:hover {
   padding-right: 10px;
 }
 
-
+/* vertical card */
+.v-cards {
+  margin-top: 70px
+}
+.v-cards::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.v-cards .card {
+  box-shadow: 3px 3px;
+  float: left;
+  width: 30%;
+  background: #fff;
+}
+.v-cards .card:first-child {
+  margin-right: 5%
+}
+.v-cards .card:last-child {
+  margin-left: 5%
+}
 
 .main-award {
   height: 500px;
