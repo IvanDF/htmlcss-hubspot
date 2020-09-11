@@ -51,6 +51,7 @@ img.arrow {
   vertical-align:text-bottom;
   width: 20px;
 }
+
 /* animation dropdown menu */
 .dropdown {
   position: relative;
@@ -553,7 +554,7 @@ footer {
 .footer-menu-item h5{
   padding-bottom: 15px;
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
   list-style:none;
 }
 .footer-menu-item input{
