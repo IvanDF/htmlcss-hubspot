@@ -38,7 +38,7 @@ h4 {
 }
 p {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   color: #33465B;
 }
 em {
@@ -51,21 +51,22 @@ img.arrow {
   vertical-align:text-bottom;
   width: 20px;
 }
-#dropdown {
+/* animation dropdown menu */
+.dropdown {
   position: relative;
   display: inline-block;
 }
-#dropdown-menu {
+.dropdown-menu {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 0 20px;
 }
-#dropdown-menu ul li {
+.dropdown-menu ul li {
   width: 100%;
 }
-#dropdown:hover #dropdown-menu {
+.dropdown:hover .dropdown-menu {
   display: block;
   z-index: 2
 }
@@ -81,9 +82,6 @@ input[type="button"] {
 }
 input[type="button"]:hover {
   background-color: #FFBCAC;
-}
-#animation{
-  transition: all ease-out 1s
 }
 
 .container {
@@ -123,8 +121,8 @@ input[type="button"]:hover {
   line-height: 60px;
   display: inline-block;
 }
-.navbar-info-lang #dropdown-menu li,
-.navbar-info-lang #dropdown-menu li a {
+.navbar-info-lang .dropdown-menu li,
+.navbar-info-lang .dropdown-menu li a {
   line-height: 0;
 }
 .navbar-info-sign {
@@ -135,10 +133,13 @@ input[type="button"]:hover {
   display: table;
   clear: both;
 }
-.navbar-info-sign li {
+.navbar-info-sign ul li {
   margin-left: 10px;
   line-height: 60px;
   display: inline-block;
+}
+.navbar-info-sign ul li i {
+  color: #09A3BD;
 }
 .navbar-info-sign ul li input[type=text] {
   background: #F5F8FA;
@@ -166,12 +167,14 @@ input[type="button"]:hover {
   padding: 8px 15px;
 }
 .navbar-info-sign li .button-log{
+  transition: all ease-out 1s;
   border: solid  #FF7959 1px;
   background:#F5F8FA;
   color:  #FF7959;
   padding: 8px 8px;
 }
 .navbar-info-sign li .button-log:hover{
+  transition: all ease-out 1s;
   background-color: #FFBCAC;
 }
 
@@ -181,7 +184,7 @@ input[type="button"]:hover {
   padding-top: 60px;
 }
 
-.navbar-menu #dropdown-menu {
+.navbar-menu .dropdown-menu {
   padding: 15px 20px;
   white-space: nowrap;
   /* withe space non fa wrappare il testo */
@@ -348,7 +351,7 @@ input[type="button"]:hover {
 /* main award */
 .main-award {
   margin: 50px 0;
-  padding: 20px 0;
+  padding: 20px 0 40px 0;
   background: linear-gradient(45deg,#00a4bd,#00bda5);
 }
 .main-award-txt {
@@ -449,7 +452,6 @@ input[type="button"]:hover {
 .adv-grow-img img {
   height: 300px;
 }
-
 
 /* chat */
 .chat {
