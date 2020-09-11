@@ -10,7 +10,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: #33465B;
 }
 i {
   color: #FF7959;
@@ -19,7 +19,7 @@ li {
   list-style: none;
 }
 hr {
-  border: 1px solid black;
+  border: 1px solid #EAEEF2;
 }
 h2 {
   font-size: 30px
@@ -29,6 +29,23 @@ h3 {
 }
 h4 {
   font-size: 15px
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #33465B
+}
+p {
+  font-weight: normal;
+  font-size: 18px;
+  color: #33465B;
+}
+em {
+  display: block;
+  font-size: 12px;
+  color: #33465B;
+  padding-top: 30px;
 }
 img.arrow {
   vertical-align:text-bottom;
@@ -171,15 +188,15 @@ input[type="button"]:hover {
 /* main */
 /* main header */
 .main-header {
-  background: #FFF3EE;
+  background: linear-gradient(#FFF2ED, #FEF8EF);
 }
 .main-header-bg {
   background: url('../img/header/jumbotron.png');
-  background-position: top right;
+  background-position: top -15px right;
   background-repeat: no-repeat;
 }
 .main-header-content {
-  padding: 100px 0 180px 0;
+  padding: 90px 0 160px 0;
   width: 520px
 }
 .main-header-content h1{
@@ -188,13 +205,6 @@ input[type="button"]:hover {
 }
 .main-header-content p{
   padding: 30px 0;
-}
-.main-header-content input{
-}
-.main-header-content em{
-  font-size: 13px;
-  display:   block;
-  padding: 30px 0 0 0;
 }
 .space {
   border-top: 2px black solid;
@@ -318,7 +328,6 @@ input[type="button"]:hover {
   margin: 50px 0;
   padding: 20px 0;
   background: linear-gradient(45deg,#00a4bd,#00bda5);
-  color: #fff;
 }
 .main-award-txt {
   text-align: center;
@@ -353,7 +362,8 @@ input[type="button"]:hover {
 }
 .main-award-col h4 {
   line-height: 40px;
-  font-size: 25px
+  font-size: 25px;
+  color: #fff;
 }
 .main-award-col span {
   padding-left: 3px;
@@ -362,6 +372,7 @@ input[type="button"]:hover {
 }
 .main-award-col p {
   font-size: 10px;
+  color: #fff;
 }
 /* main advertising */
 .main-adv .container:first-child {
