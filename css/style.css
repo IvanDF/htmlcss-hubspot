@@ -71,6 +71,7 @@ img.arrow {
 }
 
 input[type="button"] {
+  transition: all ease-out 1s;
   background-color: #FF7959;
   border: none;
   border-radius: 5px;
@@ -129,16 +130,37 @@ input[type="button"]:hover {
 .navbar-info-sign {
   float: right;
 }
+.navbar-info-sign form::after{
+  content: '';
+  display: table;
+  clear: both;
+}
 .navbar-info-sign li {
   margin-left: 10px;
   line-height: 60px;
   display: inline-block;
 }
-.navbar-info-sign li i {
-  vertical-align: middle;
+.navbar-info-sign ul li input[type=text] {
+  background: #F5F8FA;
+  border:0;
+  width: 0;
+}
+.navbar-info-sign ul li button {
   font-size: 15px;
-  color: #11A3BD;
-  padding: 0 10px
+  background: #F5F8FA;
+  line-height:59px;
+  border:none;
+  float: right;
+  color: white;
+  cursor: pointer;
+}
+.navbar-info-sign ul li button:focus + input[type=text] {
+  margin-right: 20px;
+  display:inline-block;
+  padding: 10px;
+  border-radius: 20px;
+  border:1px solid gray;
+  width: 200px;
 }
 .navbar-info-sign li input{
   padding: 8px 15px;
@@ -404,7 +426,7 @@ input[type="button"]:hover {
 /* main grow */
 .adv-grow {
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .adv-grow::after {
   content: '';
@@ -466,9 +488,14 @@ footer {
   list-style:none;
 }
 .footer-menu-item a{
+  transition: all ease-out 1s;
   color: lightgray;
   line-height: 30px;
   font-size: 15px;
+}
+.footer-menu-item a:hover{
+  transition: all ease-out 1s;
+  color: #76C2D0;
 }
 .footer-menu-item h5{
   padding-bottom: 15px;
@@ -477,10 +504,14 @@ footer {
   list-style:none;
 }
 .footer-menu-item input{
+  transition: all ease-out 1s;
   margin: 5px 0;
   color: #000;
   background: lightgray;
   padding: 10px;
+}
+.footer-menu-item input:hover{
+  background: #76C2D0;
 }
 .footer-menu-item i{
   padding-right: 20px;
@@ -495,10 +526,15 @@ footer {
   display: inline-block;
 }
 .footer-languages ul li a {
+  transition: all ease-out 1s;
   font-size: 13px;
   color: lightgray;
   padding: 0 5px;
   margin-bottom: 10px;
+}
+.footer-languages ul li a:hover {
+  transition: all ease-out 1s;
+  color: #76C2D0;
 }
 /* footer copiright */
 .footer-copiright {
