@@ -469,10 +469,24 @@ input[type="button"]:hover {
   color: #fff;
 }
 .chat .hover-message {
-  border: solid red 1px;
+  background: #F5F8FA;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  white-space: nowrap;
   display: none;
   position: absolute;
-  bottom: 160px;
+  bottom: 70px;
+  right: 20px;
+}
+.chat .hover-message h4 {
+  color: #425A76;
+  font-size: 16px;
+  padding: 10px 5px;
+}
+.chat .hover-message p {
+  color: #425A76;
+  font-size: 13px;
+  padding: 10px 0;
 }
 .chat:hover .hover-message {
   display: block;
