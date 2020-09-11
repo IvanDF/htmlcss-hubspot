@@ -468,6 +468,15 @@ input[type="button"]:hover {
   font-size: 25px;
   color: #fff;
 }
+.chat .hover-message {
+  border: solid red 1px;
+  display: none;
+  position: absolute;
+  bottom: 160px;
+}
+.chat:hover .hover-message {
+  display: block;
+}
 
 /* footer */
 footer {
