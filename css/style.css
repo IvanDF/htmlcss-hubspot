@@ -43,11 +43,10 @@ img.arrow {
   position: absolute;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 20px;
+  padding: 0 20px;
 }
 #dropdown-menu ul li {
   width: 100%;
-  padding: 10px 0;
 }
 #dropdown:hover #dropdown-menu {
   display: block;
@@ -78,6 +77,10 @@ input[type="button"]:hover {
 
 /* navbar info */
 .navbar-info {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: fixed;
+  z-index: 5;
+  width: 100%;
   background: #F5F8FA;
   height: 60px;
   border-bottom: 1px solid #000
@@ -135,13 +138,16 @@ input[type="button"]:hover {
 
 /* navbar menu */
 .navbar-menu {
-  height: 60px;
+  height: 130px;
+  padding-top: 60px;
 }
-.navbar-menu::after {
-  content: '';
-  display: table;
-  clear: both;
+
+.navbar-menu #dropdown-menu {
+  padding: 15px 20px;
+  white-space: nowrap;
+  /* withe space non fa wrappare il testo */
 }
+
 .navbar-menu-img{
   position: relative;
   float: left;
@@ -153,6 +159,7 @@ input[type="button"]:hover {
   transform: translateY(-50%);
 }
 .navbar-menu-list {
+  line-height: 70px;
   float: right;
 }
 .navbar-menu-item {
@@ -211,7 +218,7 @@ input[type="button"]:hover {
 .h-card {
   background: #fff;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 40px
 }
 .h-card-content::after {
@@ -273,7 +280,7 @@ input[type="button"]:hover {
 .v-cards .card {
   text-align: center;
   padding: 30px 40px;
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   float: left;
   width: 30%;
   background: #fff;
@@ -413,7 +420,7 @@ input[type="button"]:hover {
 
 /* chat */
 .chat {
-  box-shadow: 5px 5px 10px #888888;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   text-align: center;
   height: 60px;
   width: 60px;
