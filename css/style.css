@@ -15,6 +15,9 @@ a {
 i {
   color: #FF7959;
 }
+li {
+  list-style: none;
+}
 hr {
   border: 1px solid black;
 }
@@ -31,21 +34,22 @@ img.arrow {
   vertical-align:text-bottom;
   width: 20px;
 }
-.dropdown {
+#dropdown {
   position: relative;
   display: inline-block;
 }
-.dropdown-menu {
+#dropdown-menu {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 20px;
 }
-.dropdown-menu ul li {
+#dropdown-menu ul li {
   width: 100%;
+  padding: 10px 0;
 }
-.dropdown:hover .dropdown-menu {
+#dropdown:hover #dropdown-menu {
   display: block;
   z-index: 2
 }
@@ -97,6 +101,10 @@ input[type="button"]:hover {
 .navbar-info-lang li a{
   line-height: 60px;
   display: inline-block;
+}
+.navbar-info-lang #dropdown-menu li,
+.navbar-info-lang #dropdown-menu li a {
+  line-height: 0;
 }
 .navbar-info-sign {
   float: right;
