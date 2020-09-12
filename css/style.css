@@ -110,6 +110,12 @@ input[type="button"]:hover {
 .navbar-info-lang {
   float: left;
 }
+.navbar-info-lang hr {
+  border: solid 1px #808080;
+  margin: 0 10px;
+  height: 20px;
+  display: inline;
+}
 .navbar-info-lang li {
   line-height: 60px;
   display: inline-block;
@@ -222,7 +228,7 @@ input[type="button"]:hover {
   background-repeat: no-repeat;
 }
 .main-header-content {
-  padding: 90px 0 160px 0;
+  padding: 90px 0 185px 0;
   width: 520px
 }
 .main-header-content h1{
@@ -379,7 +385,7 @@ input[type="button"]:hover {
   text-align: center;
   float: left;
   width: calc(100% / 4);
-  padding: 10px;
+  padding: 20px;
 }
 .main-award-col:nth-child(1) {
   border-right: 1px solid #fff;
