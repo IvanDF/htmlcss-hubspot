@@ -341,13 +341,17 @@ input[type="button"]:hover {
   padding: 25px 0;
 }
 .v-cards .card ul li{
-  line-height: 20px;
+  line-height: 18px;
   list-style: none;
   text-align: left;
 }
 .v-cards .card ul li i{
   font-size: 14px;
   padding-right: 15px;
+}
+.v-cards .card input[type=button] {
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 /* main award */
 .main-award {
