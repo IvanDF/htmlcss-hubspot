@@ -37,8 +37,9 @@ p {
   font-size: 16px;
 }
 em {
+  font-style: normal;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   padding-top: 30px;
 }
 img.arrow {
@@ -83,7 +84,7 @@ input[type="button"] {
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 15px 30px;
+  padding: 20px 35px;
   cursor: pointer;
 }
 input[type="button"]:hover {
@@ -206,7 +207,19 @@ input[type="button"]:hover {
 /* main */
 /* main header */
 .main-header {
+  position:relative;
   background: linear-gradient(#FFF2ED, #FEF8EF);
+}
+.main-header::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  height: 80px;
+  background: #AFEAE4;
 }
 .main-header-bg {
   background: url('../img/header/jumbotron.png');
@@ -214,27 +227,22 @@ input[type="button"]:hover {
   background-repeat: no-repeat;
 }
 .main-header-content {
-  padding: 90px 0 170px 0;
-  width: 520px;
+  height: 680px;
+  padding-top: 70px;
+  width: 540px;
   max-width:100%;
 }
 .main-header-content h1{
   line-height: 50px;
-  font-size: 46px;
+  font-size: 50px;
 }
 .main-header-content p{
   padding: 30px 0;
 }
-.space {
-  border-top: 2px black solid;
-  border-bottom: 2px black solid;
-  height: 80px;
-  background: #AFEAE4;
-}
 /* section title */
 .section-title {
   padding: 70px 0;
-  width: 850px;
+  width: 800px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -250,7 +258,7 @@ input[type="button"]:hover {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
-  padding: 40px 0;
+  padding: 40px 30px;
 }
 .h-content-l {
   padding: 20px 50px;
@@ -269,12 +277,15 @@ input[type="button"]:hover {
 .h-content-r {
   width: 70%;
   float: left;
-  padding: 20px 50px 20px 0;
+  padding-right: 50px;
 }
 .h-content-r h4 {
   background: #fff;
   position: relative;
   text-transform: uppercase;
+}
+.h-content-r p {
+  margin: 20px 0;
 }
 .h-content-r h4::before {
   content: '';
@@ -292,15 +303,8 @@ input[type="button"]:hover {
   display: inline-block;
   width: 35%;
 }
-
-/* .h-content-r hr { */
-  vertical-align: middle;
-  display: inline-block;
-  padding: 0 170px;
-  margin-left: 60px;
-}
 .h-content-r li {
-  padding-right: 10px;
+  margin-top: 30px;
   display: inline-block;
 }
 .h-content-r i {
