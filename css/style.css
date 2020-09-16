@@ -17,7 +17,7 @@ li {
   list-style: none;
 }
 h2 {
-  font-size: 32px
+  font-size: 32px;
 }
 h3 {
   font-size: 22px;
@@ -53,6 +53,7 @@ img.arrow {
   padding: 0 10px;
   margin: 0 auto;
 }
+
 /* dropdown menu */
 .dropdown {
   position: relative;
@@ -72,6 +73,7 @@ img.arrow {
   display: block;
   z-index: 2
 }
+
 /* buttons */
 input[type="button"] {
   transition: all ease-out 1s;
@@ -85,6 +87,7 @@ input[type="button"] {
 input[type="button"]:hover {
   background-color: #FFBCAC;
 }
+
 /* navbar info */
 .navbar-info {
   box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
@@ -100,7 +103,7 @@ input[type="button"]:hover {
 }
 .navbar-info-lang hr {
   border: solid 1px #808080;
-  margin: 0 10px;
+  margin: 0 20px;
   height: 20px;
   display: inline;
 }
@@ -109,6 +112,7 @@ input[type="button"]:hover {
   display: inline-block;
 }
 .navbar-info-lang li i {
+  padding-right: 2px;
   color: #33465B;
   font-size: 14px
 }
@@ -167,6 +171,7 @@ input[type="button"]:hover {
   transition: all ease-out 1s;
   background-color: #FFBCAC;
 }
+
 /* navbar menu */
 .navbar-menu {
   height: 130px;
@@ -196,10 +201,12 @@ input[type="button"]:hover {
   line-height: 60px;
   display: inline-block;
 }
+
 /* main */
 main i {
   color: #FF7959;
 }
+
 /* main header */
 .main-header {
   position:relative;
@@ -231,6 +238,7 @@ main i {
   line-height: 50px;
   font-size: 50px;
 }
+
 /* section title */
 .section-title {
   width: 800px;
@@ -241,10 +249,8 @@ main i {
 .section-title img {
   height: 180px
 }
-.section-title h2 {
-  padding-bottom: 20px
-}
 /* horizzontal card */
+
 .h-card {
   background: #fff;
   border-radius: 8px;
@@ -300,6 +306,7 @@ main i {
   margin-right: 15px;
 }
 /* vertical card */
+
 .v-cards {
   margin-top: 70px
 }
@@ -322,11 +329,11 @@ main i {
   height: 100px;
 }
 .v-cards .card h3 {
-  padding-bottom: 20px;
+  padding-top: 10px;
   text-transform: capitalize;
 }
 .v-cards .card hr {
-  margin: 50px 0 5px 0;
+  margin: 40px 0 5px 0;
   border: solid #33465B 1px
 }
 .v-cards .card h4 {
@@ -344,9 +351,10 @@ main i {
   margin-top: 50px;
   margin-bottom: 0;
 }
+
 /* main award */
 .main-award {
-  margin: 50px 0;
+  margin: 60px 0;
   padding: 20px 0 40px 0;
   background: linear-gradient(45deg,#00a4bd,#00bda5);
   color: #fff;
@@ -355,6 +363,7 @@ main i {
   text-align: center;
   padding: 20px 0;
 }
+
 /* main award table */
 .main-award-row:first-child {
   border-bottom: 1px solid #fff
@@ -390,12 +399,13 @@ main i {
   font-size: 12px;
   color: #fff;
 }
+
 /* main advertising */
 .main-adv .container:first-child {
   width: 850px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 .main-adv-customers-info {
   float:left;
@@ -415,11 +425,8 @@ main i {
   text-align: center;
   vertical-align: middle;
 }
+
 /* main grow */
-.adv-grow {
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
 .adv-grow-txt {
   float: left;
   width: 450px;
@@ -428,8 +435,9 @@ main i {
   float: right;
 }
 .adv-grow-img img {
-  height: 300px;
+  height: 350px;
 }
+
 /* chat */
 .chat {
   box-shadow: 0px 0px 6px rgba(0,0,0,0.6);
@@ -477,10 +485,12 @@ main i {
 .chat:hover .hover-message {
   display: block;
 }
+
 /* footer */
 footer {
   color: #fff;
   background: #33465B;
+  margin-top: 80px;
 }
 .footer-menu-col {
   padding: 30px 0;
@@ -538,6 +548,7 @@ footer {
 .footer-menu-item input:hover {
   background: #76C2D0;
 }
+
 /* footer languages */
 .footer-languages {
   text-align:center;
@@ -557,6 +568,7 @@ footer {
   transition: all ease-out 1s;
   color: #76C2D0;
 }
+
 /* footer copiright */
 .footer-copiright {
   padding: 25px 0;
