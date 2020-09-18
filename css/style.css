@@ -9,6 +9,9 @@ body {
   color: #33465B;
   font-family: 'Jost', sans-serif;
 }
+
+/* typography */
+
 a {
   text-decoration: none;
   color: #33465B;
@@ -55,6 +58,7 @@ img.arrow {
 }
 
 /* dropdown menu */
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -69,12 +73,29 @@ img.arrow {
 .dropdown-menu ul li {
   width: 100%;
 }
+.dropdown-menu a::after {
+  content: '';
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 0;
+  left: -10%;
+  bottom: -8px;
+  border-radius: 5px;
+  background: #FF7959;
+  transition: all ease-out .4s;
+}
+.dropdown-menu a:hover::after {
+  width: 120%;
+  transition: all ease-out .4s;
+}
 .dropdown:hover .dropdown-menu {
   display: block;
   z-index: 2
 }
 
 /* buttons */
+
 input[type="button"] {
   transition: all ease-out 1s;
   background-color: #FF7959;
@@ -89,6 +110,7 @@ input[type="button"]:hover {
 }
 
 /* navbar info */
+
 .navbar-info {
   box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
   position: fixed;
@@ -137,10 +159,12 @@ input[type="button"]:hover {
 }
 .navbar-info-sign ul li input[type=text] {
   background: #F5F8FA;
+  margin-right: 10px;
   border:0;
   width: 0;
 }
 .navbar-info-sign ul li button {
+  outline: none;
   font-size: 15px;
   background: #F5F8FA;
   line-height:59px;
@@ -150,7 +174,6 @@ input[type="button"]:hover {
   cursor: pointer;
 }
 .navbar-info-sign ul li button:focus + input[type=text] {
-  margin-right: 20px;
   display:inline-block;
   padding: 10px;
   border-radius: 20px;
@@ -173,12 +196,32 @@ input[type="button"]:hover {
 }
 
 /* navbar menu */
+
 .navbar-menu {
   height: 130px;
   padding-top: 60px;
 }
-.navbar-menu .dropdown-menu {
-  padding: 15px 20px;
+
+.navbar-menu .dropdown-menu a::after {
+  content: '';
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 0;
+  left: -2%;
+  bottom: 10px;
+  border-radius: 5px;
+  background: #FF7959;
+  transition: all ease-out .4s;
+}
+.navbar-menu .dropdown-menu a:hover::after {
+  width: 104%;
+  transition: all ease-out .4s;
+}
+
+
+.navbar-menu .dropdown-menu li {
+  line-height: 45px;
   white-space: nowrap;
   /* withe space non fa wrappare il testo */
 }
@@ -198,16 +241,17 @@ input[type="button"]:hover {
 }
 .navbar-menu-item {
   padding: 0 10px;
-  line-height: 60px;
   display: inline-block;
 }
 
 /* main */
+
 main i {
   color: #FF7959;
 }
 
 /* main header */
+
 .main-header {
   position:relative;
   background: linear-gradient(#FFF2ED, #FEF8EF);
@@ -240,6 +284,7 @@ main i {
 }
 
 /* section title */
+
 .section-title {
   width: 800px;
   max-width: 100%;
@@ -249,6 +294,7 @@ main i {
 .section-title img {
   height: 180px
 }
+
 /* horizzontal card */
 
 .h-card {
@@ -305,6 +351,7 @@ main i {
 .h-content-r i {
   margin-right: 15px;
 }
+
 /* vertical card */
 
 .v-cards {
@@ -353,6 +400,7 @@ main i {
 }
 
 /* main award */
+
 .main-award {
   margin: 60px 0;
   padding: 20px 0 40px 0;
@@ -365,6 +413,7 @@ main i {
 }
 
 /* main award table */
+
 .main-award-row:first-child {
   border-bottom: 1px solid #fff
 }
@@ -401,6 +450,7 @@ main i {
 }
 
 /* main advertising */
+
 .main-adv .container:first-child {
   width: 850px;
   margin: 0 auto;
@@ -427,6 +477,7 @@ main i {
 }
 
 /* main grow */
+
 .adv-grow-txt {
   float: left;
   width: 450px;
@@ -439,8 +490,9 @@ main i {
 }
 
 /* chat */
+
 .chat {
-  box-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
   text-align: center;
   height: 60px;
   width: 60px;
@@ -454,6 +506,10 @@ main i {
   transition: all ease-out 1s;
   cursor: pointer;
   border: solid #76C2D0 1px
+}
+.chat:active {
+  box-shadow:none;
+  transition: all ease-out .2s;
 }
 .chat i {
   line-height: 60px;
@@ -487,6 +543,7 @@ main i {
 }
 
 /* footer */
+
 footer {
   color: #fff;
   background: #33465B;
@@ -500,7 +557,6 @@ footer {
 .footer-menu-item h5 {
   font-size: 17px;
   padding-bottom: 15px;
-  color: #fff;
 }
 .footer-menu-item a {
   transition: all ease-out 1s;
@@ -550,6 +606,7 @@ footer {
 }
 
 /* footer languages */
+
 .footer-languages {
   text-align:center;
   margin: 40px 0 15px 0  ;
@@ -570,6 +627,7 @@ footer {
 }
 
 /* footer copiright */
+
 .footer-copiright {
   padding: 25px 0;
   border-top: solid lightgray 1px;
